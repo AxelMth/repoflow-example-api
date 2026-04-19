@@ -8,6 +8,7 @@ const app = Fastify()
 
 beforeAll(async () => {
   await app.register(cors, { origin: '*' })
+  app.get('/health', async () => ({ ok: true }))
   await app.register(helloRoutes)
   await app.ready()
 })

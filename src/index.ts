@@ -1,4 +1,4 @@
-import Fastify from 'fastify'
+import Fastify, { type FastifyError } from 'fastify'
 import cors from '@fastify/cors'
 import { helloRoutes } from './routes/hello.js'
 
@@ -16,7 +16,7 @@ app.get('/health', async () => {
 
 await app.register(helloRoutes)
 
-app.setErrorHandler((error, _request, reply) => {
+app.setErrorHandler((error: FastifyError, _request, reply) => {
   app.log.error(error)
   reply.status(error.statusCode ?? 500).send({ error: error.message })
 })
