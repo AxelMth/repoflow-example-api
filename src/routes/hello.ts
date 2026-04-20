@@ -1,5 +1,5 @@
 import type { FastifyInstance } from 'fastify'
-import { HelloResponseSchema } from '@repoflow-example/shared'
+import { HelloResponseSchema } from 'repoflow-example-shared'
 
 export async function helloRoutes(app: FastifyInstance): Promise<void> {
   app.get('/api/hello', async (_request, reply) => {

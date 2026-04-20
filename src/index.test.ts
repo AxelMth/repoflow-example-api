@@ -2,7 +2,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import Fastify from 'fastify'
 import cors from '@fastify/cors'
 import { helloRoutes } from './routes/hello.js'
-import { HelloResponseSchema } from '@repoflow-example/shared'
+import { HelloResponseSchema } from 'repoflow-example-shared'
 
 const app = Fastify()
 

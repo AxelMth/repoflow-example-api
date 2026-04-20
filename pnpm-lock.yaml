@@ -11,12 +11,12 @@ importers:
       '@fastify/cors':
         specifier: ^11.2.0
         version: 11.2.0
-      '@repoflow-example/shared':
-        specifier: file:../repoflow-example-shared
-        version: file:../repoflow-example-shared(zod@3.25.76)
       fastify:
         specifier: ^5.2.1
         version: 5.8.5
+      repoflow-example-shared:
+        specifier: ^0.1.0
+        version: 0.1.0(zod@3.25.76)
       zod:
         specifier: ^3.23.8
         version: 3.25.76
@@ -423,14 +423,6 @@ packages:
 
   '@pinojs/redact@0.4.0':
     resolution: {integrity: sha512-k2ENnmBugE/rzQfEcdWHcCY+/FM3VLzH9cYEsbdsoqrvzAKRhUZeRNhAZvB8OitQJ1TBed3yqWtdjzS6wJKBwg==}
-
-  '@repoflow-example/shared@file:../repoflow-example-shared':
-    resolution: {directory: ../repoflow-example-shared, type: directory}
-    peerDependencies:
-      zod: ^3.23.8
-    peerDependenciesMeta:
-      zod:
-        optional: true
 
   '@rollup/rollup-android-arm-eabi@4.60.2':
     resolution: {integrity: sha512-dnlp69efPPg6Uaw2dVqzWRfAWRnYVb1XJ8CyyhIbZeaq4CA5/mLeZ1IEt9QqQxmbdvagjLIm2ZL8BxXv5lH4Yw==}
@@ -1100,6 +1092,14 @@ packages:
     resolution: {integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==}
     engines: {node: '>= 12.13.0'}
 
+  repoflow-example-shared@0.1.0:
+    resolution: {integrity: sha512-5k0SOxoU7WXrBK3+a7ZEhLECLbbE94NSQCfsePbBz/cJX/NMuh88AGdCcAtWRxc592ckoArg5nQdyXElxEwWPw==}
+    peerDependencies:
+      zod: ^3.23.8
+    peerDependenciesMeta:
+      zod:
+        optional: true
+
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
@@ -1569,10 +1569,6 @@ snapshots:
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
   '@pinojs/redact@0.4.0': {}
-
-  '@repoflow-example/shared@file:../repoflow-example-shared(zod@3.25.76)':
-    optionalDependencies:
-      zod: 3.25.76
 
   '@rollup/rollup-android-arm-eabi@4.60.2':
     optional: true
@@ -2258,6 +2254,10 @@ snapshots:
   quick-format-unescaped@4.0.4: {}
 
   real-require@0.2.0: {}
+
+  repoflow-example-shared@0.1.0(zod@3.25.76):
+    optionalDependencies:
+      zod: 3.25.76
 
   require-from-string@2.0.2: {}
 

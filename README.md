@@ -16,7 +16,7 @@ Exposes two endpoints:
 ## Stack
 
 - **Fastify 5** — web framework
-- **@repoflow-example/shared** — Zod schema validation
+- **repoflow-example-shared** — Zod schema validation
 - **TypeScript 5.6** — ESM, strict mode
 - **Vitest** — tests
 
