@@ -1,5 +1,4 @@
 import Fastify, { type FastifyError } from 'fastify'
-import cors from '@fastify/cors'
 import { helloRoutes } from './routes/hello.js'
 import { statsRoutes } from './routes/stats.js'
 
