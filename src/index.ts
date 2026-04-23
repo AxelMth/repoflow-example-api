@@ -1,20 +1,16 @@
 import Fastify, { type FastifyError } from 'fastify'
 import cors from '@fastify/cors'
 import { helloRoutes } from './routes/hello.js'
+import { statsRoutes } from './routes/stats.js'
 
 const app = Fastify({ logger: true })
-
-const corsOrigin = process.env.CORS_ORIGIN ?? 'http://localhost:5173'
-
-await app.register(cors, {
-  origin: corsOrigin,
-})
 
 app.get('/health', async () => {
   return { ok: true }
 })
 
 await app.register(helloRoutes)
+await app.register(statsRoutes)
 
 app.setErrorHandler((error: FastifyError, _request, reply) => {
   app.log.error(error)
