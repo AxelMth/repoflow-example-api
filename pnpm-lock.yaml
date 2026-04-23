@@ -15,8 +15,8 @@ importers:
         specifier: ^5.2.1
         version: 5.8.5
       repoflow-example-shared:
-        specifier: ^0.1.0
-        version: 0.1.0(zod@3.25.76)
+        specifier: ^0.2.0
+        version: 0.2.0(zod@3.25.76)
       zod:
         specifier: ^3.23.8
         version: 3.25.76
@@ -1092,8 +1092,8 @@ packages:
     resolution: {integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==}
     engines: {node: '>= 12.13.0'}
 
-  repoflow-example-shared@0.1.0:
-    resolution: {integrity: sha512-5k0SOxoU7WXrBK3+a7ZEhLECLbbE94NSQCfsePbBz/cJX/NMuh88AGdCcAtWRxc592ckoArg5nQdyXElxEwWPw==}
+  repoflow-example-shared@0.2.0:
+    resolution: {integrity: sha512-Tw/O+l1lM+MOaO7P3Mp1EPcxYqtVoiAJy3KcNb40YYtH5hZB/Ced8Ja/GVuplt5FOOrzjHaRkwxHCkGZXwBlmw==}
     peerDependencies:
       zod: ^3.23.8
     peerDependenciesMeta:
@@ -2255,7 +2255,7 @@ snapshots:
 
   real-require@0.2.0: {}
 
-  repoflow-example-shared@0.1.0(zod@3.25.76):
+  repoflow-example-shared@0.2.0(zod@3.25.76):
     optionalDependencies:
       zod: 3.25.76
 
